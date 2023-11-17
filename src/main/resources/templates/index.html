@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log in to our website</title>
+
+	<!-- add favicon -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- add css styling -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mquery.css">
+
+	<!-- fontawesome cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+
+
+<section>
+	<div class="login__box">
+		<div class="login__form">
+			<div class="top">
+				<h3>Welcome to <span>LetsTest</span></h3>
+				<p>Welcome back! Log in to your account to test yourself</p>
+			</div>
+
+			<form autocomplete="off" >
+				<div class="mail">
+					<i class="fas fa-envelope"></i>
+					<input type="email" name="email" id="email" placeholder="Email" autocomplete="false">
+				</div>
+
+				<div class="pass">
+					<i class="fas fa-lock"></i>
+					<input type="password" name="password" id="pass" placeholder="Password" autocomplete="false">
+				</div>
+
+				<div class="action">
+					<input type="button" id="login" name="button" class="btn" value="Log in">
+				</div>
+			</form>
+
+			<div class="footer">
+				<a href="/registration">Create a new account</a>
+			</div>
+		</div>
+
+		<div class="placeholder__img">
+
+		</div>
+	</div>
+</section>
+
+</body>
+<script th:src="@{/webjars/jquery/3.2.1/jquery.js}"></script>
+<script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+<script th:src="@{/js/login.js}"></script>
+</html>

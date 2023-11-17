@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/createQuiz.css">
+    <link rel="stylesheet" th:href="@{/css/quizHistory.css}">
+    <title></title>
+</head>
+
+<body>
+<div class="logo">
+    <h1>LETSTEST</h1>
+</div>
+<nav class="navbar">
+    <ul>
+        <li>
+            <b>Faculty DashBoard</b>
+        </li>
+        <li>
+            <a ><b>Home</b></a>
+        </li>
+        <li>
+            <a href="/createQuiz"><b>Create Quiz</b></a>
+        </li>
+        <li>
+            <a href="/quizHistory"><b>Quiz History</b></a>
+        </li>
+        <li>
+            <a href="/quizAnalysis"><b>Quiz Response</b></a>
+        </li>
+        <li>
+            <a href="/profile"><b>Profile</b></a>
+        </li>
+    </ul>
+
+</nav>
+<section id="history">
+<div>
+    <h1 style="margin-left: 100px;margin-top: 70px">ALL QUIZZES</h1>
+    <div id="quizHistory" class="split left" style="display: none; align-items: center"></div>
+    <div class="split right" id="questionAnswer" style="padding-top: 0;padding-bottom: 1%; padding-right: 3%; padding-left: 3%"></div>
+</div>
+</section>
+</body>
+<script th:src="@{/js/quizHistory.js}"></script>
+</html>

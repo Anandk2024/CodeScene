@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/studentDashboard.css}">
+    <link rel="stylesheet" th:href="@{/css/w2ui-min.css}">
+    <header class="center">
+        <h1>Student Dashboard</h1>
+    </header>
+
+</head>
+<body>
+<div class="topnav">
+    <a href="#upcoming">Upcoming Quiz</a>
+    <a href="/Studentprofile">About</a>
+</div>
+<div id="upcoming">
+    <div id="activeQuiz"></div>
+</div>
+
+</div>
+
+</body>
+<script th:src="@{/js/studentDashboard.js}"></script>
+<script th:src="@{/webjars/jquery/3.2.1/jquery.js}"></script>
+<script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+</html>
